@@ -1,0 +1,7 @@
+import nmap 
+
+def network_scanner(network): #Network Scanner function created which recieves a parameter called network; netowkr is a range of IP based on CIDR notation (use SubnetMask)
+    portScanner = nmap.PortScanner() #Setting the PortScanner function on nmap to portScanner created object
+    portScanner.scan(hosts=network, '22-443') #Using the scan function from the PortScanner. This takes to parameters, one for the network which is the range, the second is the range of ports that need scanning.
+
+    device
